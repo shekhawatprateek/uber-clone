@@ -10,3 +10,22 @@ content-type: application/json
     "email": "prateekshekahwat7@gmail.com",
     "password": "Admin@123"
 }
+
+###
+POST http://localhost:4000/users/login
+content-type: application/json
+
+{
+    "email": "prateekshekahwat7@gmail.com",
+    "password": "Admin@123"
+}
+
+###
+GET http://localhost:4000/users/profile
+content-type: application/json
+Authorization: Bearer yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdmZWU3ZDNkZWNmMDljZmFmZWFlZjkiLCJpYXQiOjE3MzY1MDE1NDIsImV4cCI6MTczNjU4Nzk0Mn0.1tJlK9ZcqIo71ynMbmGyimHIEceo6idG7JebSiUtMhI
+
+###
+GET http://localhost:4000/users/logout
+content-type: application/json
+Authorization: Bearer yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdmZWU3ZDNkZWNmMDljZmFmZWFlZjkiLCJpYXQiOjE3MzY1MDE1NDIsImV4cCI6MTczNjU4Nzk0Mn0.1tJlK9ZcqIo71ynMbmGyimHIEceo6idG7JebSiUtMhI
