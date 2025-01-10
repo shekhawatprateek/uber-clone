@@ -14,6 +14,38 @@
             "type": "node"
         },
         {
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "name": "nodemon",
+            "program": "${workspaceFolder}/app.js",
+            "request": "launch",
+            "restart": true,
+            "runtimeExecutable": "nodemon",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "name": "Attach",
+            "port": 9229,
+            "request": "attach",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
+            "name": "Attach by Process ID",
+            "processId": "${command:PickProcess}",
+            "request": "attach",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
             "name": "Attach by Process ID",
             "processId": "${command:PickProcess}",
             "request": "attach",
@@ -29,7 +61,8 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/backend/server.js"
+            "program": "${workspaceFolder}/backend/server.js",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }

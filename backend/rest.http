@@ -29,3 +29,23 @@ Authorization: Bearer yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdmZWU3ZD
 GET http://localhost:4000/users/logout
 content-type: application/json
 Authorization: Bearer yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzdmZWU3ZDNkZWNmMDljZmFmZWFlZjkiLCJpYXQiOjE3MzY1MDE1NDIsImV4cCI6MTczNjU4Nzk0Mn0.1tJlK9ZcqIo71ynMbmGyimHIEceo6idG7JebSiUtMhI
+
+
+###
+POST http://localhost:4000/captains/register
+content-type: application/json
+
+{
+    "fullname": {
+        "firstname": "Arun",
+        "lastname": "Singh"
+    },
+    "email": "arunsingh@gmail.com",
+    "password": "Admin@123",
+    "vehicle": {
+        "color": "Red",
+        "plate": "RJ14 2019",
+        "capacity": 1,
+        "vehicleType": "car"
+    }
+}
