@@ -49,3 +49,22 @@ content-type: application/json
         "vehicleType": "car"
     }
 }
+
+###
+POST http://localhost:4000/captains/login
+content-type: application/json
+
+{
+    "email": "arunsingh@gmail.com",
+    "password": "Admin@123"
+}
+
+###
+GET http://localhost:4000/captains/profile
+content-type: application/json
+Authorization: Bearer yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzgxMzEyOTVhZjY1MTc1YzAxYjMwOGEiLCJpYXQiOjE3MzY1ODA0NjUsImV4cCI6MTczNjY2Njg2NX0.LIpYhOtvb1vJEbetrgy75j7e2fVBB9cFi6BSRA0ZXt0.zcdkivQe26ylLY57eRulgSXw78n9brnvRLM03YImWUc
+
+###
+GET http://localhost:4000/captains/logout
+content-type: application/json
+Authorization: Bearer yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzgxMzEyOTVhZjY1MTc1YzAxYjMwOGEiLCJpYXQiOjE3MzY1ODA0NjUsImV4cCI6MTczNjY2Njg2NX0.LIpYhOtvb1vJEbetrgy75j7e2fVBB9cFi6BSRA0ZXt0
